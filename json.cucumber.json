@@ -1,0 +1,229 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 10825630218,
+              "status": "passed"
+            },
+            "match": {
+              "location": "KayakHook.setup()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "UseCase1",
+        "description": "",
+        "id": "kayak-application;usecase1;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 685382587,
+              "status": "passed"
+            },
+            "match": {
+              "location": "KayakHook.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 228187051,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I launched in the kayak application for \"test1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test1",
+                  "offset": 41
+                }
+              ],
+              "location": "KayakStepDefinitions.i_launched_in_the_kayak_application_for(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 271799331,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I verify the home page using homePageTitle",
+            "match": {
+              "location": "KayakStepDefinitions.i_verify_the_home_page_using_homePageTitle()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6137294646,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter the \"Bengaluru\" and \"Chennai\" cities",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Bengaluru",
+                  "offset": 13
+                },
+                {
+                  "val": "Chennai",
+                  "offset": 29
+                }
+              ],
+              "location": "KayakStepDefinitions.i_enter_the_and_cities(String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3706525580,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter the \"11/15/2020\" and \"12/12/2020\" dates",
+            "match": {
+              "arguments": [
+                {
+                  "val": "11/15/2020",
+                  "offset": 13
+                },
+                {
+                  "val": "12/12/2020",
+                  "offset": 30
+                }
+              ],
+              "location": "KayakStepDefinitions.i_enter_the_and_dates(String,String)"
+            },
+            "matchedColumns": [
+              3,
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2706838207,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on search icon",
+            "match": {
+              "location": "KayakStepDefinitions.i_click_on_search_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2070858607,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I verify the search page using \"BLR to MAA\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "BLR to MAA",
+                  "offset": 32
+                }
+              ],
+              "location": "KayakStepDefinitions.i_verify_the_search_page_using(String)"
+            },
+            "matchedColumns": [
+              5
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 29316692,
+              "error_message": "java.lang.IndexOutOfBoundsException: Index: 2, Size: 1\r\n\tat java.util.ArrayList.rangeCheck(ArrayList.java:653)\r\n\tat java.util.ArrayList.get(ArrayList.java:429)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:497)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)\r\n\tat com.sun.proxy.$Proxy18.get(Unknown Source)\r\n\tat com.kayak.pages.KayakSearchResultPage.clickNthNumber(KayakSearchResultPage.java:47)\r\n\tat com.kayak.stepdefinitions.KayakStepDefinitions.on_search_results_page_I_select_the_search_result_where_N_is_the_input_data(KayakStepDefinitions.java:74)\r\n\tat ✽.And On search results page, I select the search result \"3\" , where N is the input data(Kayak.feature:11)\r\n",
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "On search results page, I select the search result \"3\" , where N is the input data",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 52
+                }
+              ],
+              "location": "KayakStepDefinitions.on_search_results_page_I_select_the_search_result_where_N_is_the_input_data(String)"
+            },
+            "matchedColumns": [
+              6
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "I Assert the \"BLR\" and \"MAA\" Details are same as the one entered in the main screen",
+            "match": {
+              "arguments": [
+                {
+                  "val": "BLR",
+                  "offset": 14
+                },
+                {
+                  "val": "MAA",
+                  "offset": 24
+                }
+              ],
+              "location": "KayakStepDefinitions.i_Assert_the_and_Details_are_same_as_the_one_entered_in_the_main_screen(String,String)"
+            },
+            "matchedColumns": [
+              7,
+              8
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "Usecase \"test1\" is completed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test1",
+                  "offset": 9
+                }
+              ],
+              "location": "KayakStepDefinitions.usecase_is_completed(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Kayak Application",
+    "description": "",
+    "id": "kayak-application",
+    "keyword": "Feature",
+    "uri": "Kayak.feature"
+  }
+]

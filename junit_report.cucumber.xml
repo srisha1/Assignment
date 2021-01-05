@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="26.661833">
+<testcase classname="Kayak Application" name="UseCase1" time="26.661833">
+<failure message="java.lang.IndexOutOfBoundsException: Index: 2, Size: 1&#13;&#10;&#9;at java.util.ArrayList.rangeCheck(ArrayList.java:653)&#13;&#10;&#9;at java.util.ArrayList.get(ArrayList.java:429)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;&#10;&#9;at java.lang.reflect.Method.invoke(Method.java:497)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)&#13;&#10;&#9;at com.sun.proxy.$Proxy18.get(Unknown Source)&#13;&#10;&#9;at com.kayak.pages.KayakSearchResultPage.clickNthNumber(KayakSearchResultPage.java:47)&#13;&#10;&#9;at com.kayak.stepdefinitions.KayakStepDefinitions.on_search_results_page_I_select_the_search_result_where_N_is_the_input_data(KayakStepDefinitions.java:74)&#13;&#10;&#9;at ✽.And On search results page, I select the search result &quot;3&quot; , where N is the input data(Kayak.feature:11)&#13;&#10;"><![CDATA[Given I launched in the kayak application for "test1".......................passed
+Then I verify the home page using homePageTitle.............................passed
+When I enter the "Bengaluru" and "Chennai" cities...........................passed
+And I enter the "11/15/2020" and "12/12/2020" dates.........................passed
+And I click on search icon..................................................passed
+Then I verify the search page using "BLR to MAA"............................passed
+And On search results page, I select the search result "3" , where N is the input data.failed
+Then I Assert the "BLR" and "MAA" Details are same as the one entered in the main screen.skipped
+And Usecase "test1" is completed............................................skipped
+
+StackTrace:
+java.lang.IndexOutOfBoundsException: Index: 2, Size: 1
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
+	at com.sun.proxy.$Proxy18.get(Unknown Source)
+	at com.kayak.pages.KayakSearchResultPage.clickNthNumber(KayakSearchResultPage.java:47)
+	at com.kayak.stepdefinitions.KayakStepDefinitions.on_search_results_page_I_select_the_search_result_where_N_is_the_input_data(KayakStepDefinitions.java:74)
+	at ✽.And On search results page, I select the search result "3" , where N is the input data(Kayak.feature:11)
+]]></failure>
+</testcase>
+</testsuite>
